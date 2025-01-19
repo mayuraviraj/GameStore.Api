@@ -6,6 +6,27 @@ Accept: application/json
 GET {{Api_HostAddress}}/games
 Accept: application/json
 ###
-GET {{Api_HostAddress}}/games/2
+GET {{Api_HostAddress}}/games/7
 Accept: application/json
 ###
+POST  {{Api_HostAddress}}/games
+Content-Type: application/json
+
+{
+    "name" : "Minecraft",
+    "genre" : "Kids",
+    "price" : 165.32,
+    "releaseDate" : "2011-01-01"
+}
+###
+PUT  {{Api_HostAddress}}/games/1
+Content-Type: application/json
+
+{
+  "name" : "MinecraftXXX",
+  "genre" : "Kids",
+  "price" : 165.32,
+  "releaseDate" : "2011-01-01"
+}
+###
+DELETE  {{Api_HostAddress}}/games/7
