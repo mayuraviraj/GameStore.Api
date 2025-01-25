@@ -14,7 +14,7 @@ Content-Type: application/json
 
 {
     "name" : "Minecraft",
-    "genre" : "Kids",
+    "genreId" : 1,
     "price" : 1.32,
     "releaseDate" : "2011-01-01"
 }
